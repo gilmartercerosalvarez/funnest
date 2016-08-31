@@ -3,6 +3,11 @@ body {
     padding-bottom: 0px;
     background-color: #eee;
 }
-footer{
+
+footer {
     background-color: #222;
+}
+
+.test{
+    background: blue;
 }
