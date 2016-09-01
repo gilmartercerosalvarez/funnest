@@ -34,7 +34,7 @@
     }
     // Bundled (~40 requests):
     function packUmd(pkgName) {
-        packages['@angular/'+pkgName] = { main: '/bundles/' + pkgName + '.umd.js', defaultExtension: 'js' };
+        packages['@angular/'+pkgName] = { main: 'bundles/' + pkgName + '.umd.js', defaultExtension: 'js' };
     }
     // Most environments should use UMD; some (Karma) need the individual index files
     var setPackageConfig = System.packageWithIndex ? packIndex : packUmd;
@@ -46,6 +46,5 @@
     };
     System.config(config);
 })(this);
-
 
 System.import('app').catch(function(err){ console.error(err); });
