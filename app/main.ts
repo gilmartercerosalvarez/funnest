@@ -1,10 +1,6 @@
-/**
- * Responsible to define the root component 
- */
-import { bootstrap }    from '@angular/platform-browser-dynamic';
-import { AppComponent } from './modules/app.component';
-//import { APP_ROUTER_PROVIDERS } from './modules/app.routes';
+import {platformBrowserDynamic} from '@angular/platform-browser-dynamic';
+import {AppModule} from './app.module';
 
-bootstrap(AppComponent, [
-    //APP_ROUTER_PROVIDERS
-]).catch(err => console.error(err));
+const platform = platformBrowserDynamic();
+
+platform.bootstrapModule(AppModule);
