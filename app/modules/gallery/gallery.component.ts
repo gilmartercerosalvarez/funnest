@@ -5,4 +5,6 @@ import {Component} from '@angular/core';
     template: '<h2>Gallery</h2>'
 })
 
-export class GalleryComponent {}
+export class GalleryComponent {
+    
+}

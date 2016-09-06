@@ -2,6 +2,9 @@ import {Component} from '@angular/core';
 
 @Component({
     selector: 'home',
-    templateUrl: 'app/modules/home/home.component.html'
+    templateUrl: 'app/modules/home/home.component.html',
 })
-export class HomeComponent {}
+
+export class HomeComponent {
+    title = 'Lista de eventos';
+}
