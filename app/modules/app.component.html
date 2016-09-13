@@ -11,7 +11,7 @@
         </div>
         <div id="navbar" class="navbar-collapse collapse navbar-right" aria-expanded="false" style="height: 1px;">
             <ul class="nav navbar-nav">
-                <li><a href="#">Inicio <i class="glyphicon glyphicon-home"></i></a></li>
+                <li><a routerLink="/Home">Inicio <i class="glyphicon glyphicon-home"></i></a></li>
                 <li><a href="#">Lugares en <i class="glyphicon glyphicon-eye-open"></i></a></li>
                 <li><a href="#">Galerias <i class="glyphicon glyphicon-camera"></i></a></li>
                 <li><a href="#">Multimedia <i class="glyphicon glyphicon-play-circle"></i></a></li>
@@ -38,8 +38,7 @@
     <article class="col-md-8">
         <div class="panel panel-default">
             <div class="panel-body">
-                <home>loading home..</home>
-                <gallery>Loafing gallery</gallery>
+                <router-outlet></router-outlet>
             </div>
         </div>
     </article><!--/.col-xs-12.col-sm-9-->
@@ -52,20 +51,20 @@
                 </div>
                 <div class="panel-body">
                     <div class="list-group">
-                        <a href="#" class="list-group-item">
+                        <a class="list-group-item" routerLink="/Tolata">
                             Tolata
                             <span class="pull-right text-muted small"><em>50 Fotografias</em></span>
                         </a>
-                        <a href="#" class="list-group-item">
+                        <a class="list-group-item">
                             German jordan
                             <span class="pull-right text-muted small"><em>12 Fotografias</em></span>
                         </a>
-                        <a href="#" class="list-group-item">
+                        <a class="list-group-item">
                             Punata
                             <span class="pull-right text-muted small"><em>6 Fotografias</em></span>
                         </a>
                     </div>
-                    <a href="#" class="btn btn-success btn-block">Ver todos</a>
+                    <a class="btn btn-success btn-block">Ver todos</a>
                 </div>
             </div>
             <div class="panel panel-default">
