@@ -11,13 +11,15 @@
         </div>
         <div id="navbar" class="navbar-collapse collapse navbar-right" aria-expanded="false" style="height: 1px;">
             <ul class="nav navbar-nav">
-                <li><a routerLink="/Home">Inicio <i class="glyphicon glyphicon-home"></i></a></li>
-                <li><a routerLink="/Events">Eventos <i class="glyphicon glyphicon-eye-open"></i></a></li>
-                <li><a routerLink="/Gallery">Galerias <i class="glyphicon glyphicon-camera"></i></a></li>
-                <li><a routerLink="/Movies">Videos <i class="glyphicon glyphicon-play-circle"></i></a></li>
+                <li><a routerLink="/Home" routerLinkActive="active"><i class="glyphicon glyphicon-home"></i></a></li>
+                <li><a routerLink="/auxRouter/(aux)" routerLinkActive="active"><i class="glyphicon glyphicon-play-circle"></i></a></li>
+                <!--
+                <li><a routerLink="/Events" routerLinkActive="active"><i class="glyphicon glyphicon-eye-open"></i></a></li>
+                <li><a routerLink="/Gallery" routerLinkActive="active"><i class="glyphicon glyphicon-camera"></i></a></li>
+                <li><a routerLink="/Movies" routerLinkActive="active"><i class="glyphicon glyphicon-play-circle"></i></a></li>
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                        <i class="glyphicon glyphicon-user"></i> Invitado <b class="caret"></b>
+                        <i class="glyphicon glyphicon-user"></i><b class="caret"></b>
                     </a>
                     <ul class="dropdown-menu">
                         <li><a href="#"><i class="fa fa-fw fa-user"></i> Iniciar Session</a></li>
@@ -26,63 +28,16 @@
                         <li class="divider"></li>
                         <li><a href="#"><i class="fa fa-fw fa-power-off"></i> Salir</a></li>
                     </ul>
-                </li>
+                </li> -->
             </ul>
-
-        </div><!-- /.nav-collapse -->
-    </div><!-- /.container -->
+        </div>
+    </div>
 </nav>
 
-<section class="container">
-    <article class="col-md-8">
-        <div class="panel panel-default">
-            <div class="panel-body">
-                <router-outlet></router-outlet>
-            </div>
-        </div>
-    </article><!--/.col-xs-12.col-sm-9-->
-
-    <aside class="col-md-4">
-        <div class="nav navbar-collapse collapse bootstrap-admin-navbar-side">
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                    Lugares en
-                </div>
-                <div class="panel-body">
-                    <div class="list-group">
-                        <a class="list-group-item" routerLink="/Tolata">
-                            Tolata
-                            <span class="pull-right text-muted small"><em>50 Fotografias</em></span>
-                        </a>
-                        <a class="list-group-item">
-                            German jordan
-                            <span class="pull-right text-muted small"><em>12 Fotografias</em></span>
-                        </a>
-                        <a class="list-group-item">
-                            Punata
-                            <span class="pull-right text-muted small"><em>6 Fotografias</em></span>
-                        </a>
-                    </div>
-                    <a class="btn btn-success btn-block">Ver todos</a>
-                </div>
-            </div>
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                    Bolivia
-                </div>
-                <div class="panel-body">
-                    <img src="app/modules/assets/images/Bolivia.jpg" width="100%">
-                    <button type="button" class="btn btn-success btn-block">Sugerencias</button>
-                </div>
-            </div>
-        </div>
-    </aside>
-
-    <hr>
-</section><!--/.container-->
+    <router-outlet></router-outlet>
 
 <footer class="footer">
     <div class="container">
-        <p class="text-muted">Desarrollado por FunNest</p>
+        <p class="text-muted">Develop by FUNNEST</p>
     </div>
 </footer>

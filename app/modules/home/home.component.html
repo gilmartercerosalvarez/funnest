@@ -1,1 +1,39 @@
-<h1>Home</h1>
+<section class="container">
+
+    <article class="col-md-8">
+        <div class="panel panel-default">
+            <div class="panel-body">
+                hola home
+                <router-outlet name="route1"></router-outlet>
+            </div>
+        </div>
+    </article>
+
+    <aside class="col-md-4">
+        <div class="nav navbar-collapse collapse bootstrap-admin-navbar-side">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    {{pageTitle}}
+                </div>
+                <div class="panel-body">
+                    <div class="list-group">
+                        <a *ngFor="let place of places" class="list-group-item">
+                            {{place.name}}
+                            <span class="pull-right text-muted small"><em>{{place.photographies}} Fotografias</em></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    Bolivia
+                </div>
+                <div class="panel-body">
+                    <img src="app/modules/assets/images/Bolivia.jpg" width="100%">
+                    <button type="button" class="btn btn-success btn-block">Sugerencias</button>
+                </div>
+            </div>
+        </div>
+    </aside>
+
+</section>

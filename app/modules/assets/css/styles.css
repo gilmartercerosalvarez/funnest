@@ -11,3 +11,7 @@ footer {
 .test{
     background: blue;
 }
+li a.active{
+    color: white;
+    border-color: white;
+}

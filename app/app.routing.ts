@@ -10,7 +10,7 @@ const appRoutes:Routes = [
     {
         path: '',
         redirectTo: 'Home',
-        pathMatch: 'full'
+        pathMatch: 'full',
     },
     {
         path: 'Home',
