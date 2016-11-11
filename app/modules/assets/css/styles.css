@@ -8,9 +8,6 @@ footer {
     background-color: #222;
 }
 
-.test{
-    background: blue;
-}
 li a.active{
     color: white;
     border-color: white;

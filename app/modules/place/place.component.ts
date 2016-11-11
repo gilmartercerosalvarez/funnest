@@ -31,7 +31,7 @@ export class PlaceComponent implements OnInit
     public  ngOnInit(): void
     {
         this.getPlaces();
-        this.getImages(0);
+        this.getImages(0, 'Tolata');
     }
 
     /**
@@ -47,10 +47,11 @@ export class PlaceComponent implements OnInit
      * Get all images relates to an determinate place according an Id place
      *
      * @param id
+     * @param place
      */
-    public getImages(id:number): void
+    public getImages(id:number, place:string): void
     {
-        console.log(id);
+        this.place = place;
         this.placeService.getImages(id).then(images => this.images = images);
     }
 }

@@ -56,7 +56,7 @@
                 </div>
                 <div class="panel-body">
                     <div class="list-group">
-                        <a *ngFor="let place of places" class="list-group-item" (click)="getImages(place.id)">
+                        <a *ngFor="let place of places" class="list-group-item" (click)="getImages(place.id, place.name)">
                             {{place.name}}
                             <span class="pull-right text-muted small"><em>{{place.photographies}} Fotografias</em></span>
                         </a>
