@@ -25,8 +25,9 @@ export class EventService
         return [
             {
                 title: 'XIV Feria del pato el Cuy y la chica Tolateña',
+                urlOrigin: 'www.facebook.com',
                 place: 'Plaza Principal Turistica de Tolata km 33 Carretera antigua a Santa Cruz',
-                urlImage: 'app/modules/assets/images/events/tolata-4-04-2014.jpg',
+                image: 'app/modules/assets/images/events/tolata-4-04-2014.jpg',
                 date: '6 de Julio 2014',
                 description: 'Tolata Capital Turística del Valle Alto, Te invita a la XIV Feria del Pato, Cuy y el Nectar Tolateño. Domindo 6 de julio desde las 9:00am en la Plaza Principal Turística de Tolata , carretera antigua a Santa Cruz Km. 33 Se servirán variedad de platas como ser: - Lambreado de conejo - Chanka de conejo - Pato al vino - Pato asado- Pampaku'
             },

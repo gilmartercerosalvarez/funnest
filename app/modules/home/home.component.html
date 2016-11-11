@@ -4,10 +4,10 @@
 
             <div *ngFor="let event of events" class="col-sm-12 col-lg-12 col-md-12">
                 <div class="thumbnail">
-                    <img src="{{event.urlImage}}" alt="">
+                    <img src="{{event.image}}">
                     <div class="caption">
                         <h4 class="pull-right">{{event.date}}</h4>
-                        <h4><a href="#">{{event.title}}</a></h4>
+                        <h4><a target="_blank" href="{{event.urlOrigin}}">{{event.title}}</a></h4>
                         <p>{{event.description}}</p>
                     </div>
                     <div class="ratings">
