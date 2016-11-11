@@ -1,0 +1,24 @@
+<section class="container">
+    <div class="col-md-7">
+        <player [player]="playerDisplayed"></player>
+    </div>
+
+    <aside class="col-md-5" data-toggle="collapse">
+        <div class="nav navbar-collapse collapse bootstrap-admin-navbar-side">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    Lista de Jugadores
+                </div>
+                <div class="panel-body">
+                    <div class="list-group">
+                        <a *ngFor="let player of players" class="list-group-item" (click)="setPlayer(player)">
+                            {{player.firstName +' '+player.lastName}}
+                            <span class="pull-right text-muted small"><em>Delantero</em></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </aside>
+
+</section>

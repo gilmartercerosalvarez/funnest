@@ -1,10 +1,11 @@
 import {ModuleWithProviders} from '@angular/core';
 import {Routes, RouterModule} from '@angular/router';
 
-import {GalleryComponent} from './modules/gallery/gallery.component';
 import {HomeComponent} from './modules/home/home.component';
-import {MoviesComponent} from './modules/movies/movies.component';
-import {EventsComponent} from './modules/events/events.component';
+import {PlaceComponent} from './modules/place/place.component';
+import {ChampionshipComponent} from './modules/championship/championship.component';
+import {GroupComponent} from "./modules/championship/group.component";
+import {TeamComponent} from "./modules/championship/team.component";
 
 const appRoutes:Routes = [
     {
@@ -15,19 +16,28 @@ const appRoutes:Routes = [
     {
         path: 'Home',
         component: HomeComponent,
+        children: [
+            { path: '', pathMatch: 'full' },
+            { path: 'Championship', component: ChampionshipComponent },
+            { path: 'Home', component: HomeComponent }
+        ]
     },
     {
-        path: 'Gallery',
-        component: GalleryComponent
+        path: 'Place',
+        component: PlaceComponent,
     },
     {
-        path: 'Movies',
-        component: MoviesComponent,
+        path: 'Championship',
+        component: ChampionshipComponent,
     },
     {
-        path: 'Events',
-        component: EventsComponent,
+        path: 'group/:id',
+        component: GroupComponent
     },
+    {
+        path: 'team/:id',
+        component: TeamComponent
+    }
 ];
 
 export const routing:ModuleWithProviders = RouterModule.forRoot(appRoutes);

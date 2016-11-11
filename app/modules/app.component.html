@@ -12,7 +12,8 @@
         <div id="navbar" class="navbar-collapse collapse navbar-right" aria-expanded="false" style="height: 1px;">
             <ul class="nav navbar-nav">
                 <li><a routerLink="/Home" routerLinkActive="active"><i class="glyphicon glyphicon-home"></i></a></li>
-                <li><a routerLink="/auxRouter/(aux)" routerLinkActive="active"><i class="glyphicon glyphicon-play-circle"></i></a></li>
+                <li><a [routerLink]="['Place']" routerLinkActive="active"><i class="glyphicon glyphicon-play-circle"></i></a></li>
+                <li><a [routerLink]="['Championship']" routerLinkActive="active"><i class="glyphicon glyphicon-star"></i></a></li>
                 <!--
                 <li><a routerLink="/Events" routerLinkActive="active"><i class="glyphicon glyphicon-eye-open"></i></a></li>
                 <li><a routerLink="/Gallery" routerLinkActive="active"><i class="glyphicon glyphicon-camera"></i></a></li>

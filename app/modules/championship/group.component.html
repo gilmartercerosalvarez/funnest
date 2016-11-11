@@ -1,0 +1,82 @@
+<section class="container">
+    <div class="panel panel-primary">
+        <div class="panel-heading"><h3>Tabla de posiciones</h3></div>
+        <div class="panel-body">
+            <p><b>Lista de equipos en order de puntacion,</b>
+                PJ = Partidos Jugados,
+                PG = Partidos Ganados,
+                PE = Partidos Empatados,
+                PP = Partidos Perdidos,
+                GF = Goles a Favor,
+                GC = Goles en Contra,
+                DI = Diferencia,
+                PT = Puntuacion Total
+            </p>
+        </div>
+        <div class="table-responsive">
+            <table class="table table-responsive">
+                <thead>
+                    <tr class="active">
+                        <th>#</th>
+                        <th>EQUIPO</th>
+                        <th>PJ</th>
+                        <th>PG</th>
+                        <th>PE</th>
+                        <th>PP</th>
+                        <th>GF</th>
+                        <th>GC</th>
+                        <th>DI</th>
+                        <th>PT</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let team of getTeams(); let i = index;" [ngClass]="{'success': i < 4, 'danger': i >= 4}">
+                        <th scope="row">{{i+1}}</th>
+                        <td><a (click)="redirectToTeam(team.id)">{{team.name}}</a></td>
+                        <td>{{team.PJ}}</td>
+                        <td>{{team.PG}}</td>
+                        <td>{{team.PE}}</td>
+                        <td>{{team.PP}}</td>
+                        <td>{{team.GF}}</td>
+                        <td>{{team.GC}}</td>
+                        <td>{{team.DI}}</td>
+                        <th scope="row">{{team.PT}}</th>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div class="panel panel-info">
+        <div class="panel-heading">Jornada 1: 12/10/2016</div>
+        <table class="table table-striped">
+            <colgroup>
+                <col class="col-xs-3">
+                <col class="col-xs-1">
+                <col class="col-xs-3">
+                <col class="col-xs-1">
+                <col class="col-xs-3">
+                <col class="col-xs-1">
+            </colgroup>
+            <tbody>
+                <tr>
+                    <td>Funnest</td>
+                    <td class="info">1-0</td>
+                    <td>Villa lourdes</td>
+                    <td>9:00 PM</td>
+                    <td>Coliseo Tolata</td>
+                    <td><button class="btn btn-success btn-xs pull-right" type="button" (click)="redirectToGroups(group.id)">Cronica</button></td>
+                </tr>
+                <tr>
+                    <td>Funnest</td>
+                    <td class="info">1-0</td>
+                    <td>Villa lourdes</td>
+                    <td>9:00 PM</td>
+                    <td>Coliseo Tolata</td>
+                    <td><button class="btn btn-success btn-xs pull-right" type="button" (click)="redirectToGroups(group.id)">Cronica</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+</section>

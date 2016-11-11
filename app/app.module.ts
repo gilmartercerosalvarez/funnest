@@ -4,9 +4,11 @@ import {AppComponent} from './app.component';
 import {routing} from './app.routing';
 
 import {HomeComponent} from './modules/home/home.component';
-import {GalleryComponent} from './modules/gallery/gallery.component';
-import {MoviesComponent} from './modules/movies/movies.component';
-import {EventsComponent} from './modules/events/events.component';
+import {ChampionshipComponent} from './modules/championship/championship.component';
+import {PlaceComponent} from './modules/place/place.component';
+import {GroupComponent} from "./modules/championship/group.component";
+import {TeamComponent} from "./modules/championship/team.component";
+import {PlayerComponent} from "./modules/championship/player.component";
 
 @NgModule({
     imports: [
@@ -16,9 +18,11 @@ import {EventsComponent} from './modules/events/events.component';
     declarations: [
         AppComponent,
         HomeComponent,
-        GalleryComponent,
-        MoviesComponent,
-        EventsComponent,
+        ChampionshipComponent,
+        PlaceComponent,
+        GroupComponent,
+        TeamComponent,
+        PlayerComponent,
     ],
     bootstrap: [AppComponent]
 })
